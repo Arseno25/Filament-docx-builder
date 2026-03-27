@@ -2,6 +2,7 @@
 
 namespace Arseno25\DocxBuilder\Tests;
 
+use Arseno25\DocxBuilder\DocxBuilderServiceProvider;
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
@@ -19,7 +20,6 @@ use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use Arseno25\DocxBuilder\DocxBuilderServiceProvider;
 
 class TestCase extends Orchestra
 {
