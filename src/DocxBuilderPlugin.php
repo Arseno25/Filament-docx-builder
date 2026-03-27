@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Arseno25\DocxBuilder;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class DocxBuilderPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'docx-builder';
     }
 
     public function register(Panel $panel): void

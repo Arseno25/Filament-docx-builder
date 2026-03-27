@@ -46,7 +46,7 @@ const defaultOptions = {
 compile({
     ...defaultOptions,
     entryPoints: ['./resources/js/index.js'],
-    outfile: './resources/dist/skeleton.js',
+    outfile: './resources/dist/docx-builder.js',
 }).then(() => {
-    console.log(`Build completed for skeleton.js`)
+    console.log(`Build completed for docx-builder.js`)
 })

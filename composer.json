@@ -1,32 +1,30 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "arseno25/docx-builder",
+    "description": "This is my package docx-builder",
     "keywords": [
-        ":vendor_name",
+        "Arseno25",
         "laravel",
         "filamentphp",
         "filament",
         "filament-plugin",
-        ":package_slug"
+        "docx-builder"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/arseno25/docx-builder",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/arseno25/docx-builder/issues",
+        "source": "https://github.com/arseno25/docx-builder"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Arseno25",
+            "email": "utomnestagumara@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.2",
         "filament/filament": "^5.0",
-        "filament/forms": "^5.0",
-        "filament/tables": "^5.0",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
@@ -43,13 +41,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Arseno25\\DocxBuilder\\": "src/",
+            "Arseno25\\DocxBuilder\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Arseno25\\DocxBuilder\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -64,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Arseno25\\DocxBuilder\\DocxBuilderServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "DocxBuilder": "Arseno25\\DocxBuilder\\Facades\\DocxBuilder"
             }
         }
     },

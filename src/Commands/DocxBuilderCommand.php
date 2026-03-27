@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Arseno25\DocxBuilder\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DocxBuilderCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'docx-builder';
 
     public $description = 'My command';
 
