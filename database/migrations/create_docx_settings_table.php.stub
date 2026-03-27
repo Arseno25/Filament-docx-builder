@@ -1,0 +1,49 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class () extends Migration {
+    public function up(): void
+    {
+        Schema::create('docx_settings', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('template_disk')->nullable();
+            $table->string('output_disk')->nullable();
+            $table->string('output_path_prefix')->nullable();
+
+            $table->unsignedInteger('retention_test_days')->nullable();
+            $table->unsignedInteger('retention_final_days')->nullable();
+
+            $table->string('payload_snapshot_policy')->nullable();
+
+            $table->boolean('queue_enabled')->default(false);
+            $table->string('queue_connection')->nullable();
+            $table->string('queue_queue')->nullable();
+
+            $table->boolean('preview_enabled_by_default')->default(true);
+            $table->unsignedInteger('preview_max_chars')->default(12000);
+            $table->unsignedInteger('preview_debounce_ms')->default(700);
+
+            $table->boolean('layout_preview_enabled')->default(false);
+            $table->boolean('layout_preview_enabled_by_default')->default(false);
+            $table->string('layout_preview_driver')->nullable();
+            $table->string('layout_preview_soffice_binary')->nullable();
+            $table->string('layout_preview_disk')->nullable();
+            $table->string('layout_preview_path_prefix')->nullable();
+            $table->unsignedInteger('layout_preview_ttl_minutes')->default(10);
+
+            $table->unsignedBigInteger('created_by')->nullable();
+            $table->unsignedBigInteger('updated_by')->nullable();
+
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('docx_settings');
+    }
+};
