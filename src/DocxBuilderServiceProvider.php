@@ -2,6 +2,8 @@
 
 namespace Arseno25\DocxBuilder;
 
+use Arseno25\DocxBuilder\Commands\DocxBuilderCommand;
+use Arseno25\DocxBuilder\Testing\TestsDocxBuilder;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -14,6 +16,7 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+<<<<<<< HEAD
 use Arseno25\DocxBuilder\Commands\DocxBuilderCommand;
 use Arseno25\DocxBuilder\Commands\CleanupDocxGenerationsCommand;
 use Arseno25\DocxBuilder\Models\DocumentGeneration;
@@ -36,6 +39,8 @@ use Arseno25\DocxBuilder\Rendering\OpenTbsRenderer;
 use Arseno25\DocxBuilder\Rendering\RendererInterface;
 use Arseno25\DocxBuilder\Services\DocxSettingsService;
 use Arseno25\DocxBuilder\Testing\TestsDocxBuilder;
+=======
+>>>>>>> 7d9f1839b83ab09da5e22fb62711b8ec9aa99e1b
 
 class DocxBuilderServiceProvider extends PackageServiceProvider
 {
